@@ -8,6 +8,14 @@ packages = [{include = "ai_template_style_transfer", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+triple-quote-clean = "^1.1.0"
+langchain = {extras = ["llms"], version = "^0.0.233"}
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
+pytest = "^7.4.0"
+isort = "^5.12.0"
+black = "^23.7.0"
 
 [tool.poetry-dynamic-versioning]
 enable = true
