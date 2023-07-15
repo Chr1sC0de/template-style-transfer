@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ai-template-style-transfer"
+version = "0.1.0"
+description = ""
+authors = ["Chris Mamon <chrisam1993@live.com>"]
+readme = "README.md"
+packages = [{include = "ai_template_style_transfer", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning.substitution]
+folders = [
+  { path = "src" }
+]
