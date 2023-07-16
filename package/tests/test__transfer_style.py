@@ -9,7 +9,7 @@ tqc = TripleQuoteCleaner()
 description = (
     tqc
     << """
-    *Background
+    *Background*
 
     Solution files uploaded into AWS will be loaded into Databricks tables. We
     will assume that the ground truth for the data loaded into Databricks will

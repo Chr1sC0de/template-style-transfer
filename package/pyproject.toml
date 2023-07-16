@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ai-template-style-transfer"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 authors = ["Chris Mamon <chrisam1993@live.com>"]
 readme = "README.md"
@@ -10,6 +10,7 @@ packages = [{include = "ai_template_style_transfer", from = "src"}]
 python = "^3.10"
 triple-quote-clean = "^1.1.0"
 langchain = {extras = ["llms"], version = "^0.0.233"}
+streamlit = "^1.24.1"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^2.17.4"
