@@ -10,7 +10,7 @@ def main():
     col1, col2, col3 = st.columns(3, gap="medium")
 
     with col1:
-        os.environ['OPENAI_API_KEY'*] = st.text_input(
+        os.environ['OPENAI_API_KEY'] = st.text_input(
             label="OpenAI API key",
             type="password",
         )
