@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import openai
 import ai_template_style_transfer
@@ -9,11 +10,10 @@ def main():
     col1, col2, col3 = st.columns(3, gap="medium")
 
     with col1:
-        openai_api_key = st.text_input(
+        os.environ['OPENAI_API_KEY'*] = st.text_input(
             label="OpenAI API key",
             type="password",
         )
-        openai.api_key = openai_api_key
 
         model = st.selectbox(
             "model", list(ai_template_style_transfer.openai.Models)
